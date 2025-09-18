@@ -3,14 +3,14 @@ So I just finished building my home server. It's definitely a rabbit hole. Once 
 I decided on using Debian with CLI for now. I want to have the flexibility to do lots of things without too much abstraction like I would have if I used something like OpenMediaLibrary, TrueNAS, or something similar.
 
 Server Part List:
-CPU: i3-12100
-Motherboard: Asus PRIME B760M-A AX Micro ATX
-HDDs: Seagate IronWolf NAS 3x 6TB
-SDD: Samsung 990 EVO 1TB
-RAM: Corsair Vengeance 32GB (2x 16GB)
-PSU: MSI A650GLS
-Case: Fractal Design Define R5
-900VA UPS
+- CPU: i3-12100
+- Motherboard: Asus PRIME B760M-A AX Micro ATX
+- HDDs: Seagate IronWolf NAS 6TB - x3
+- SDD: Samsung 990 EVO 1TB
+- RAM: Corsair Vengeance 32GB (2x 16GB)
+- PSU: MSI A650GLS
+- Case: Fractal Design Define R5
+- 900VA UPS
 
 Home Networking & Ethernet:
 So I built the server but I need to wire it to ethernet. The motherboard I got supports 2.5Gbps, and I'd love to max that out. But, I also have to get my server connected. The motherboard works over wifi, but I want it to be isolated somewhere in the house connected to ethernet for sure. So I've been learning about home networks. 
