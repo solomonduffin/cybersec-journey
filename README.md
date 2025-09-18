@@ -1,9 +1,6 @@
 # cybersec-journey
 Notes on my learning journey in Cybersecurity. Includes CTF writeups, lab walkthroughs, tools I’m exploring, and notes on concepts I'm studying.
 
-<<<<<<< HEAD
-
-=======
 This field is a passion field for me. Privacy and security are things I've always been interested in. They're incredibly relevant, and will only become moreso.
 This repository is a compilation of everything I'm doing to learn about the various sub-fields inside Cybersec, to study and train for certifications, and anything else
 along the way that's relevant. 
@@ -12,4 +9,3 @@ I want to put myself into a good position to help shore up the defenses of compa
 
 I've also always been interested in tinkering, and homelabs. That these fields overlap is very exciting to me, and I will also be detailing my journey with homelabbing here.
 Ideally, I'll use what I've learned in closer to real world settings to potentiate that knowledge while building some cool and useful stuff.
->>>>>>> 9d0d0949d00cf65c9ff4cd64dc79da256543896c
