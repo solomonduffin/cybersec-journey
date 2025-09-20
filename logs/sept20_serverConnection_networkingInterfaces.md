@@ -43,3 +43,22 @@ Most consumer routers default to:
 and then hand out client IPs in that subnet (e.g. 192.168.1.100 – 192.168.1.254)"
 
 <br>That's why I chose 192.168.1.50, so it wouldn't hand out a conflicting IP address. So it shouldn't have any problems there.
+
+
+
+<h3>ssh:</h3>
+
+Okay, short section. So we want easy secure connection between my client and server. I generated a private/public keypair using
+
+`ssh-keygen -t ed25519`
+
+Then I stored the public key inside the servers \home\<server_username>\.ssh\authorized-keys. Now I can ssh in without entering a passcode, and I can disable passcode entry to only allow ssh key entry which is great. Now I can only login to my server locally, or from this laptop.
+
+I also made a config file that lets me ssh in using `ssh debianlab` like this:
+
+```
+Host debianlab
+    HostName 192.168.1.50
+    User <server_username>
+    IdentityFile C:\Users\<client_username>\.ssh\id_ed25519
+```
