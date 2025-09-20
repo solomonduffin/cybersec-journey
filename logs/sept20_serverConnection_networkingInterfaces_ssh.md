@@ -28,19 +28,20 @@ So here is where I made a new interface for the ethernet, which is enp4s0 on my 
 
 
 <br>Some ChatGPT info about the IPv4 addresses:
-<br>"🔹 Private IP Ranges<br>
-Your 192.168.1.x address is part of the private IPv4 address space. These ranges are reserved for local networks only (they never appear on the public internet):
-
-- 10.0.0.0 – 10.255.255.255 (10/8)
-- 172.16.0.0 – 172.31.255.255 (172.16/12)
-- 192.168.0.0 – 192.168.255.255 (192.168/16)
-
-So any home, office, or internal network can use addresses from those ranges.
-
-<br>🔹 Why Your Router Uses 192.168.1.x<br>
-Most consumer routers default to:
-192.168.0.1 or 192.168.1.1 as the router/gateway
-and then hand out client IPs in that subnet (e.g. 192.168.1.100 – 192.168.1.254)"
+<br>
+>🔹 Private IP Ranges<br>
+>Your 192.168.1.x address is part of the private IPv4 address space. These ranges are reserved for local networks only (they >never appear on the public internet):
+>
+>10.0.0.0 – 10.255.255.255 (10/8)
+>172.16.0.0 – 172.31.255.255 (172.16/12)
+>192.168.0.0 – 192.168.255.255 (192.168/16)
+>
+>So any home, office, or internal network can use addresses from those ranges.
+>
+>🔹 Why Your Router Uses 192.168.1.x<br>
+>Most consumer routers default to:
+>192.168.0.1 or 192.168.1.1 as the router/gateway
+>and then hand out client IPs in that subnet (e.g. 192.168.1.100 – 192.168.1.254)
 
 <br>That's why I chose 192.168.1.50, so it wouldn't hand out a conflicting IP address. So it shouldn't have any problems there.
 
