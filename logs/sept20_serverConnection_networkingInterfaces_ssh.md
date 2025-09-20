@@ -65,6 +65,7 @@ Host debianlab
 ```
 
 <h3>Next Steps:</h3>
+
 - Setup RAID for my hard drives
 - Find a web server interface to see some of my server's stats if possible (temp, drives, etc..)
 - Setup a VPN tunnel (Tailscale or Wireguard) to VPN into my server from anywhere
