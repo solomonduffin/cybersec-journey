@@ -63,3 +63,11 @@ Host debianlab
     User <server_username>
     IdentityFile C:\Users\<client_username>\.ssh\id_ed25519
 ```
+
+<h3>Next Steps:</h3>
+- Setup RAID for my hard drives
+- Find a web server interface to see some of my server's stats if possible (temp, drives, etc..)
+- Setup a VPN tunnel (Tailscale or Wireguard) to VPN into my server from anywhere
+
+
+
