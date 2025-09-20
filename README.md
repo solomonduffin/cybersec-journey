@@ -1,5 +1,5 @@
 # cybersec-journey
-Notes on my learning journey in Cybersecurity. Includes CTF writeups, lab walkthroughs, tools I’m exploring, and notes on concepts I'm studying.
+Notes on my learning journey in IT and Cybersecurity. Includes CTF writeups, lab walkthroughs, tools I’m exploring, and notes on concepts I'm studying.
 
 This field is a passion field for me. Privacy and security are things I've always been interested in. They're incredibly relevant, and will only become moreso.
 This repository is a compilation of everything I'm doing to learn about the various sub-fields inside Cybersec, to study and train for certifications, and anything else
