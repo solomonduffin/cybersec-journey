@@ -397,9 +397,9 @@ services:
 
 Then, each container has its own structure. Homepage uses a folder called config, ~/homepage/config, and has yaml files and other things inside for you to customize the homepage and link to other containers using the urls.
 
+Then, to start the container, I run `docker compose up`, with an optional `-d` flag. Without `-d`, the terminal gets locked up as it shows logs from the container. To end the service, it's a simple `docker compose down`.
 
-
-
+There're also docker run commands, which I think are just temporary containers? So like you don't use a docker compose file, which means you can't make a persistent container. It's more for testing I think.
 
 
 
