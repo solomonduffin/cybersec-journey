@@ -369,3 +369,39 @@ You can also use external scanners like `canyouseeme.org` or `shields` to test a
 Okay this isn't working currently. I spent a long time trying to set this up so that I can vpn into my server from anywhere, but it's not working currently.
 I followed this guide https://wiki.debian.org/WireGuard, but when my Window client VPN is active, I can't even see the server. I'll come back to this.
 
+
+<h3>Setting up Docker and some containers</h3>
+
+So Docker was an easy install, just followed https://docs.docker.com/engine/install/debian/.
+Now, containers are easy to setup. I create a new folder for the application I want to make a Docker container of at ~/folder. Then, within that folder, I make a docker-compose.yml file with the right yaml code.
+
+So I decided to use Homepage as a homepage for other containers and whatever else.
+
+docker-compose.yml:
+```yaml
+services:
+  homepage:
+    image: ghcr.io/gethomepage/homepage:latest
+    container_name: homepage
+    environment:
+      HOMEPAGE_ALLOWED_HOSTS: gethomepage.dev # required, may need port. See gethomepage.dev/installation/#homepage_allowed_hosts
+      PUID: 1000 # optional, your user id
+      PGID: 1000 # optional, your group id
+    ports:
+      - 3000:3000
+    volumes:
+      - /path/to/config:/app/config # Make sure your local config directory exists
+      - /var/run/docker.sock:/var/run/docker.sock:ro # optional, for docker integrations
+    restart: unless-stopped
+```
+
+Then, each container has its own structure. Homepage uses a folder called config, ~/homepage/config, and has yaml files and other things inside for you to customize the homepage and link to other containers using the urls.
+
+
+
+
+
+
+
+
+
