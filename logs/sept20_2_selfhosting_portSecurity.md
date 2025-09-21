@@ -361,7 +361,11 @@ You can also use external scanners like `canyouseeme.org` or `shields` to test a
 * If router is **not** forwarding 9090, external attackers can’t reach Cockpit — but local attackers can.
 * Best posture: keep Cockpit LAN-only (`ufw allow from 192.168.1.0/24 to any port 9090`), disable UPnP, keep software updated, use strong unique passwords, use SSH keys, and prefer VPN for remote access.
 * If you want, I can run you through the exact `ufw` commands (already above) and show how to check router UPnP and port-forward rules — or help you set up Tailscale/WireGuard so you can access Cockpit from anywhere safely. Which would you like to do next?
-
-  
-  
 </details>
+
+
+<h3>VPN - Wireguard</h3>
+
+Okay this isn't working currently. I spent a long time trying to set this up so that I can vpn into my server from anywhere, but it's not working currently.
+I followed this guide https://wiki.debian.org/WireGuard, but when my Window client VPN is active, I can't even see the server. I'll come back to this.
+
