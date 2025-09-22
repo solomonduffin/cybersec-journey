@@ -11,3 +11,7 @@ An early trap I can see myself falling into is treating this whole thing too ser
 So I built my array on RAID 5 using mdadm. This took about 12 hours, maybe a bit less, and now it's a finished RAID array.
 
 I had 3 drives, /dev/sda, /dev/sdb, /dev/sdc, and those have been "combined" into a single drive in Linux's eyes into /dev/md0. 
+
+But it needs a filesystem, which places a structure for metadata and directories on top of the drive. There are some options here, Ext4, XFS, Btrfs, among others. I went with Ext4 since it doesn't matter too much for my system.
+
+Once it's setup, you have to mount it to a file somewhere. If it's not mounted anywhere, it can't be navigated into. It exists, but there is no door/portal into it. You can mount a drive to multiple files too which is cool. It won't stay mounted after server reset though unless you edit it into `/etc/fstab`.
