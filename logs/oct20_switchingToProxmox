@@ -1,0 +1,7 @@
+Went to India for a few weeks. While I was there I kept doing research on different things. One thing I realized is 
+that for what I want to do with this lab I need Proxmox, or some other hypervisor. They're more flexible in every way, 
+and good practice for lots of difficult/useful things that I'm sure will pop up. But anyway I'm glad I did what I did 
+with Debian, even though I'm going to completely restart now. I think having the simple environment to dip my toes in 
+was a good call, and even though I didn't do that much, I feel more confident overall in the whole process. Now, switching 
+to a hypervisor will allow me to really have fun with different Linux distros, and have even more containerization between 
+my services. It should also be good for dipping into what system admins do? Although I'm not completely sure about that.
