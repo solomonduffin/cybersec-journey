@@ -5,6 +5,9 @@ Okay so I'm struggling with how much detail I should go into here. The problem i
 **Great resource for understanding + command reference:**<br>
 https://blog.victormendonca.com/2020/11/03/zfs-for-dummies/
 
+**Official terms and definitions for a bunch of this:**<br>
+https://docs.oracle.com/cd/E18752_01/html/819-5461/ftyue.html
+
 
 ### Volume Managers, ZFS, Pools, LVMs
 Anyway, I'm trying to understand how ZFS pools, or storage pools work. And then how Datasets are on top of that. And then the question is, is that a Proxmox concept, a ZFS concept, or a general concept? Does it transcend the layer I'm working in and is relevant in many layers of storage?
