@@ -31,7 +31,7 @@ Datasets are another ZFS specific term. They're like separated directories in th
 
 So a zpool will have multiple **datasets**, and then also **Volumes (zvol)** which are blocks holding things like VMs, **snapshots** of datasets - readonly, and **clones** which are writable copies of snapshots.
 
-What's nice about these datasets (specifically the filesystem/directory kind) is you can mount them into multiple containers at once (technically I think any filesystem can as well, so this is more about containers than datasets, but this is part of how I'll use datasets). They can't be mounted into multiple VMs because that would still break. But containers are run by the same Linux kernel so it can be shared.
+What's nice about these datasets (specifically the filesystem/directory kind) is you can mount them into multiple containers at once (technically I think any filesystem can as well, so this is more about containers than datasets, but this is part of how I'll use datasets). They can't be mounted into multiple VMs because that would still break. But containers are run by the same Linux kernel so it can be shared. EXCEPT there does seem to be a way to mount into a VM using something called virtiofs, which is a middleman that sets up the VM as a sort of guest host.
 
 #### The following is directly from https://avidandrew.com/understanding-zfs-datasets.html:
 <details><summary>Basic but good summary of what ZFS datasets are</summary>
