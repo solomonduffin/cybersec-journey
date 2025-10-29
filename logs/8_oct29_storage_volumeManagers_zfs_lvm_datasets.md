@@ -1,4 +1,4 @@
-## Storage
+# Storage
 
 Okay so I'm struggling with how much detail I should go into here. The problem is I'm only understanding certain things at a surface level and I don't care to necessarily go so much deeper right now. But at a later date I would maybe come back to this section and fill in details, which maybe defeats the purpose of the logs? I'm not sure. I think this is for me and my own understanding and storage of concepts to come back to so that's probably most useful for myself.
 
