@@ -16,8 +16,9 @@ The structure is:
 ```
 
 <h3>Container Bind-Mounting</h3>
-This dataset is "bind-mounted" within my containers that need to access it (i.e. audiobookshelf). To do this, 
-in the host you edit the file: /etc/pve/lxc/<CTID>.conf (proxmox specific system here), where <CTID> is the ID of 
+This dataset is "bind-mounted" within my containers that need to access it (i.e. audiobookshelf). To do this, in the host you edit the file: 
+
+`/etc/pve/lxc/<CTID>.conf` (proxmox specific system here), where <CTID> is the ID of 
 the container (100, 101, 102, ...). Inside this file, add a line with:<br>
   
 `mpX: <host path>,mp=<container path>,[options]`
@@ -64,7 +65,7 @@ directory mask = 0775
 With other options available, but only the top ones necessary.
 Then create a password `smbpasswd -a yourusername`.
 
-Now, after reset, I can access the dataset from windows by running Win+R, `\\192.168.1.50\media`. With the proxmox host
+Now, after reset, I can access the dataset from windows by running Win+R, `\\[proxmox_host_IP]\media`. With the proxmox host
 IP at the start, and the tag afterward. It's pretty quick and I can move files back and forth easily.
 
 
